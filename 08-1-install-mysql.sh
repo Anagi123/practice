@@ -9,13 +9,13 @@ then
     echo "ERROR::Please run this script with root access"
     exit 1
 # else
-#   echo "INFO::you are root user"
+#     echo "INFO::you are root user"
 fi    
 
 # it is our responsibility again to check installation is success or not
 yum install mysql -y
 
-if [ $? ne 0 ]
+if [ $? -ne 0 ]
 then 
     echo "installation of mysql is error"
     exit 1
