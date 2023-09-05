@@ -9,4 +9,10 @@ if [ $USERID -ne 0 ]
 then 
     echo "ERROR::Please run this script with root access"
     exit 1
-fi
+# else
+#   echo "INFO::you are root user"
+fi    
+
+# it is our responsibility again to check installation is success or not
+yum install mysql -y
+
